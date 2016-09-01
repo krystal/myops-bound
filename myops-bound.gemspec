@@ -9,4 +9,5 @@ Gem::Specification.new do |s|
   s.authors       = ["Adam Cooke"]
   s.email         = ["adam@atechmedia.com"]
   s.licenses      = ['MIT']
+  s.add_dependency "moonrope-client", '>= 1.0.2', '< 2'
 end
