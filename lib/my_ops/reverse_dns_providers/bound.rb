@@ -58,7 +58,7 @@ module MyOps
           zone = ip_address.reverse.gsub(/\A(\d+)\./, '')
           [zone, $1]
         else
-          zone = ip_address.reverse.gsub(/\A((\d+\.){16})/, '')
+          zone = ip_address.reverse.gsub(/\A(([A-Fa-f\d]+\.){16})/, '')
           [zone, $1.gsub(/\.\z/, '')]
         end
       end
