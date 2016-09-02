@@ -25,6 +25,16 @@ module MyOps
         update_record(zone_id, record_name, hostname)
       end
 
+      def can_update_all?
+        true
+      end
+
+      def update_all(records)
+        records.each do |ip_address, hostname|
+          update(ip_address, hostname)
+        end
+      end
+
       def self.config
         MyOps.module_config['myops-bound']
       end
