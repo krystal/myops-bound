@@ -16,9 +16,9 @@ modules:
       api_key: abc123abc123abc123abc
 ```
 
-Once, you've done this you can reinitize the application and restart it.
+Once, you've done this you can update the modules the application and restart it.
 
 ```
-$ myops reinitialize
+$ myops update-modules
 $ myops restart
 ```
